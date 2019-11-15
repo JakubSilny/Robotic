@@ -12,7 +12,7 @@ namespace Robotic
         protected  int consumption;
 
         public RoboticPart(int _consumption)
-        {
+        {a
             consumption = _consumption;
         }
         
