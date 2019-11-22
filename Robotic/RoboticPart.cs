@@ -6,15 +6,9 @@ namespace Robotic
 {
     abstract class RoboticPart
     {
-        List<string> parts = new List<string>();
-        protected double BasicConsumption;
-        
-        protected  int consumption;
+        public virtual string StatusMessage { get { return "This is General part"; } }
 
-        public RoboticPart(int _consumption)
-        {a
-            consumption = _consumption;
-        }
-        
+        public double Consumation { get { return DeviceConsumpent; } }
+        public virtual double DeviceConsumpent { get; protected set; }
     }
 }
